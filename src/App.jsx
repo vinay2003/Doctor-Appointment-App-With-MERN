@@ -8,6 +8,7 @@ import MyAppointment from "./pages/MyAppointment";
 import Appointment from "./pages/Appointment";
 import Navbar from "./components/Navbar";
 import Contect from "./pages/Contect";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path='/my-appointments' element={<MyAppointment />} />
         <Route path='/appointments/:docId' element={<Appointment />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
